@@ -4,7 +4,7 @@ public class Main {
         while (true) {
             try {
                 Thread.sleep(10000);
-                System.out.println("Running...");
+                System.out.println("Running...")
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
