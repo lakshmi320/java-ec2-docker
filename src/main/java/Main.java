@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Java app started.......");
+        System.out.println("Java app started running......");
         while (true) {
             try {
                 Thread.sleep(10000);
