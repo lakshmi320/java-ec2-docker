@@ -30,8 +30,14 @@ jobs:
             cd /home/ec2-user/app
 
             docker stop java-app || true
+            
             docker rm java-app || true
 
             docker build -t java-app .
-            docker run -d --name java-app java-app
+            docker run -d \
+            --name myapp \
+            -p 80:8080 \
+            --restart unless-stopped \
+            myapp-image
+            
           EOF
